@@ -3,6 +3,8 @@ Java and executed on the Waba platform. Whoa. That takes me back. Anyway, I've
 ported it to .NET. It's really great for generating made up words, names, 
 passwords, etc.
 
+Nuget package available here: http://nuget.org/Packages/Packages/Details/Wordbox-1-0
+
 Here's his original description...
 
 WORDBOX generates random pronounceable words based on trigram probabilities.
