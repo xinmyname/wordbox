@@ -1,0 +1,11 @@
+syntax:glob
+.svn
+[Oo]bj
+[Bb]in
+*.[Cc]ache
+*.user
+*.suo
+*.ncb
+*.bak
+_ReSharper.*
+*.Publish.xml
