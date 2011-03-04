@@ -8,3 +8,4 @@
 *.bak
 _ReSharper.*
 *.Publish.xml
+build
