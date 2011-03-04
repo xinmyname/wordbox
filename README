@@ -1,0 +1,54 @@
+This code was ported from an old PalmOS program written by Klaus Rindtorff in 
+Java and executed on the Waba platform. Whoa. That takes me back. Anyway, I've
+ported it to .NET. It's really great for generating made up words, names, 
+passwords, etc.
+
+Here's his original description...
+
+WORDBOX generates random pronounceable words based on trigram probabilities.
+Each word is generated randomly based on the probability of individual trigrams in
+a given language. The probabilities for each language are stored in a database.
+
+Each database consists of 26 tables for the starting character 'A'..'Z'. Each table
+contains 26 rows for the middle character, and each row contains 28 entries for the
+third character 'A'..'Z' and two extra values. Each entry gives the probability for
+the occurence of the respective trigram. The first extra value gives the probability
+that the relevant character pair is a word prefix. The second extra value gives the
+probability that the character pair is a word suffix. All probabilities are relative
+and all values are normalized to be in the range 0 to 255.
+
+The trigram statistics were generated from word lists for the following languages:
+
+  ENGLISH          153418 words
+  LATIN             43530 words
+  NAMES              6333 male and female given names
+  JAPANESE NAMES    52643 names of people and places
+
+Usage in C#
+-----------
+
+using System;
+using Wordbox;
+
+class Program
+{
+    static void Main()
+    {
+        var wordGen = new WordGenerator(new Wordbox.Dictionaries.English(), 3, 12);
+        for (int i = 0; i < 10; i++)
+            Console.WriteLine(wordGen.Generate());
+    }
+}
+
+Running this program yields something like:
+Viest
+Entean
+Wraps
+Morgesishs
+Evir
+Pron
+Cedly
+Nummes
+Darhol
+Couining
+
