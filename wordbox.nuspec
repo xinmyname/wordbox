@@ -5,5 +5,7 @@
     <authors>Andy Sherwood</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Generates random pronounceable words based on trigram probabilities.</description>
+    <projectUrl>https://github.com/xinmyname/wordbox</projectUrl>
+    <iconUrl>http://nuget.org/Media/Default/Packages/Wordbox/1.0/Wordbox.png</iconUrl>
   </metadata>
 </package>
